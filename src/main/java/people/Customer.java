@@ -25,7 +25,7 @@ public class Customer {
         return money;
     }
 
-    public ArrayList<Vehicle> getOwnedVehicles() {
-        return ownedVehicles;
+    public int getOwnedVehicles() {
+        return this.ownedVehicles.size();
     }
 }

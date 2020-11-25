@@ -20,11 +20,15 @@ public class Dealership {
         return name;
     }
 
-    public ArrayList<Vehicle> getStock() {
-        return stock;
+    public int getStock() {
+        return stock.size();
     }
 
     public double getTill() {
         return till;
+    }
+
+    public void addStock (Vehicle vehicle) {
+        this.stock.add(vehicle);
     }
 }
