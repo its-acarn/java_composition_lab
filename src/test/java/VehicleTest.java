@@ -18,23 +18,23 @@ public class VehicleTest {
         engine = new Engine("diesel");
         tyres = new Tyres(4);
         seats = new Seats(5);
-        car = new Car(engine, tyres, seats, "BMW", "Big Chonker", 50.00, "Red", 0);
+        car = new Car("BMW", "Big Chonker", 50.00, "Red", 0);
     }
 
-    @Test
-    public void hasEngine() {
-        assertEquals(engine, car.getEngine());
-    }
-
-    @Test
-    public void hasTyres() {
-        assertEquals(tyres, car.getTyres());
-    }
-
-    @Test
-    public void hasSeats() {
-        assertEquals(seats, car.getSeats());
-    }
+//    @Test
+//    public void hasEngine() {
+//        assertEquals(engine, car.getEngine());
+//    }
+//
+//    @Test
+//    public void hasTyres() {
+//        assertEquals(tyres, car.getTyres());
+//    }
+//
+//    @Test
+//    public void hasSeats() {
+//        assertEquals(seats, car.getSeats());
+//    }
 
     @Test
     public void hasMake() {

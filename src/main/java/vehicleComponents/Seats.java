@@ -1,6 +1,6 @@
 package vehicleComponents;
 
-public class Seats {
+public class Seats implements IComponent{
 
     private int numberOfSeats;
 
@@ -10,5 +10,10 @@ public class Seats {
 
     public int getNumberOfSeats() {
         return numberOfSeats;
+    }
+
+    @Override
+    public String connect() {
+        return "Connected";
     }
 }

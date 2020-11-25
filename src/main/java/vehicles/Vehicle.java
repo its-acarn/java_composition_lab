@@ -1,24 +1,29 @@
 package vehicles;
 
+import vehicleComponents.IComponent;
 import vehicleComponents.Seats;
 import vehicleComponents.Tyres;
 import vehicleComponents.Engine;
 
+import java.util.ArrayList;
+
 public abstract class Vehicle {
 
-    private Engine engine;
-    private Tyres tyres;
-    private Seats seats;
+//    private Engine engine;
+//    private Tyres tyres;
+//    private Seats seats;
+    private ArrayList<IComponent> vehicleComponents;
     private String make;
     private String model;
     private double price;
     private String colour;
     private double damage;
 
-    public Vehicle(Engine engine, Tyres tyres, Seats seats, String make, String model, double price, String colour, double damage) {
-        this.engine = engine;
-        this.tyres = tyres;
-        this.seats = seats;
+    public Vehicle(String make, String model, double price, String colour, double damage) {
+//        this.engine = engine;
+//        this.tyres = tyres;
+//        this.seats = seats;
+        this.vehicleComponents = new ArrayList<>();
         this.make = make;
         this.model = model;
         this.price = price;
@@ -26,16 +31,21 @@ public abstract class Vehicle {
         this.damage = damage;
     }
 
-    public Engine getEngine() {
-        return engine;
-    }
+//    public Engine getEngine() {
+//        return engine;
+//    }
+//
+//    public Tyres getTyres() {
+//        return tyres;
+//    }
+//
+//    public Seats getSeats() {
+//        return seats;
+//    }
 
-    public Tyres getTyres() {
-        return tyres;
-    }
 
-    public Seats getSeats() {
-        return seats;
+    public int getVehicleComponents() {
+        return vehicleComponents.size();
     }
 
     public double getPrice() {

@@ -1,6 +1,6 @@
 package vehicleComponents;
 
-public class Engine {
+public class Engine implements IComponent{
 
     private String engineType;
 
@@ -10,5 +10,10 @@ public class Engine {
 
     public String getEngineType() {
         return engineType;
+    }
+
+    @Override
+    public String connect() {
+        return "Connected";
     }
 }

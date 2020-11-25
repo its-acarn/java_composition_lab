@@ -1,6 +1,6 @@
 package vehicleComponents;
 
-public class Tyres {
+public class Tyres implements IComponent {
 
     private int numberOfTyres;
 
@@ -10,5 +10,10 @@ public class Tyres {
 
     public int getNumberOfTyres() {
         return numberOfTyres;
+    }
+
+    @Override
+    public String connect() {
+        return "Connected";
     }
 }

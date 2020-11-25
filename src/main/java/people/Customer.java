@@ -1,11 +1,12 @@
 package people;
 
+import people.behaviours.IBuy;
 import vehicles.Car;
 import vehicles.Vehicle;
 
 import java.util.ArrayList;
 
-public class Customer {
+public class Customer implements IBuy {
 
 
     private String name;
