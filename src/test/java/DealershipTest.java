@@ -58,4 +58,14 @@ public class DealershipTest {
         assertEquals(0, dealership.getStock());
     }
 
+    @Test
+    public void canRepair() {
+        car.addDamage(10);
+        dealership.repair(car);
+        assertEquals(0, car.getDamage(), 0.01);
+        assertEquals(50, car.getPrice(), 0.01);
+
+
+    }
+
 }

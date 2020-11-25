@@ -42,6 +42,10 @@ public abstract class Vehicle {
         return price;
     }
 
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     public String getColour() {
         return colour;
     }
@@ -56,6 +60,10 @@ public abstract class Vehicle {
 
     public double getDamage() {
         return damage;
+    }
+
+    public void setDamage(double damage) {
+        this.damage = damage;
     }
 
     public void addDamage(double damage) {

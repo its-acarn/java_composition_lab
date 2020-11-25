@@ -38,4 +38,9 @@ public class Dealership {
         this.stock.remove(vehicle);
         customer.buyVehicle(vehicle);
     }
+
+    public void repair(Vehicle vehicle) {
+        vehicle.setPrice(vehicle.getPrice() + vehicle.getDamage());
+        vehicle.setDamage(0);
+    }
 }
