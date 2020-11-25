@@ -1,5 +1,6 @@
 package people;
 
+import vehicles.Car;
 import vehicles.Vehicle;
 
 import java.util.ArrayList;
@@ -27,5 +28,11 @@ public class Customer {
 
     public int getOwnedVehicles() {
         return this.ownedVehicles.size();
+    }
+
+    public void buyVehicle(Vehicle vehicle) {
+        this.money -= vehicle.getPrice();
+        this.ownedVehicles.add(vehicle);
+
     }
 }

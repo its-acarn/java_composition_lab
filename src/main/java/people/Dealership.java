@@ -28,7 +28,14 @@ public class Dealership {
         return till;
     }
 
-    public void addStock (Vehicle vehicle) {
+    public void buyVehicle (Vehicle vehicle) {
+        this.till -= vehicle.getPrice();
         this.stock.add(vehicle);
+    }
+
+    public void sellVehicle(Vehicle vehicle, Customer customer) {
+        this.till += vehicle.getPrice();
+        this.stock.remove(vehicle);
+        customer.buyVehicle(vehicle);
     }
 }
