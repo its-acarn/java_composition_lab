@@ -24,7 +24,7 @@ public class DealershipTest {
         engine = new Engine("diesel");
         tyres = new Tyres(4);
         seats = new Seats(5);
-        car = new Car(engine, tyres, seats, "BMW", "Big Chonker", 50.00, "Red");
+        car = new Car(engine, tyres, seats, "BMW", "Big Chonker", 50.00, "Red", 0);
         customer = new Customer("Sandra", 75.00);
     }
 

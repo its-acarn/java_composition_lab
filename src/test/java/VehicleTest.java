@@ -18,7 +18,7 @@ public class VehicleTest {
         engine = new Engine("diesel");
         tyres = new Tyres(4);
         seats = new Seats(5);
-        car = new Car(engine, tyres, seats, "BMW", "Big Chonker", 50.00, "Red");
+        car = new Car(engine, tyres, seats, "BMW", "Big Chonker", 50.00, "Red", 0);
     }
 
     @Test
@@ -54,5 +54,12 @@ public class VehicleTest {
     @Test
     public void hasPrice() {
         assertEquals(50.00, car.getPrice(), 0.01);
+    }
+
+    @Test
+    public void canAddDamage() {
+        car.addDamage(10);
+        assertEquals(10, car.getDamage(), 0.01);
+        assertEquals(40, car.getPrice(), 0.01);
     }
 }
